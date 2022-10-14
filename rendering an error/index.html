@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>rendering an error</title>
+</head>
+<body>
+        <img src="shoe.jpeg" alt="Nike shoe">
+        <p>Nike shoe</p>
+        <button id = "btn" onclick="er()">Purchase - $149</button>
+        <p id="error"></p>
+        <script>
+        	let errormessage = document.getElementById('error');
+             function er(){
+             	errormessage.innerText = "sorry page not found";
+             }
+	               
+        </script>
+</body>
+</html>

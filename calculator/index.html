@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>calculator</title>
+</head>
+<body>
+<h1>enter numbers</h1>
+<span id = num1>____</span>
+<span id = num2>____</span>
+<button id = "addition" onclick="add()"> + </button>
+<button id = "subract" onclick="sub()"> - </button>
+<button id = "multiply" onclick="mult()"> x </button>
+<button id = "divide" onclick="div()"> / </button>
+<p id = "result">___</p>
+<img src="calc.png">
+<script type="text/javascript">
+	    let adding = document.getElementById("addition");
+		let number1 = 4;
+		document.getElementById("num1").textContent = number1;
+		let number2 = 3; 
+		document.getElementById("num2").textContent = number2 ;
+		let value =   document.getElementById("result");
+	function add(){
+		//number1.innerText = 3;
+		//number2.innerText = 4;
+		value.innerText = number1 + number2;
+	}
+	function sub(){
+		//number1.innerText = 4;
+		//number2.innerText = 3;
+		//value.innerText = 4 - 3;
+		value.innerText = number1 - number2;
+	}
+	function mult(){
+		//number1.innerText = 3;
+		//number2.innerText = 4;
+		//value.innerText = 4 * 3;
+		value.innerText = number1 * number2;
+	}
+	function div(){
+		/*number1.innerText = 12;
+		number2.innerText = 4;
+		value.innerText = 12 / 4;*/
+		value.innerText = number1 / number2;
+	}
+</script>
+</body>
+</html>
